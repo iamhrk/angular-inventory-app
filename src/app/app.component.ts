@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from './models/product.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-inventory-app';
+  product : Product;
+  constructor() {
+    this.product = new Product(
+    "NICEHAT",
+    "A Nice Black Hat",
+    "/assets/images/products/black-hat.jpg",
+    ["Men", "Accessories", "Hats"], 
+    29.99)
+  }
 }
