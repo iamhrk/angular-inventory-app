@@ -1,4 +1,12 @@
-# AngularInventoryApp
+# Angular Inventory App
+
+Live version of the app is available [here](https://angular-inventory-app.onrender.com/)
+
+A simple angular inventory app that displays a product list.
+
+The app uses Angular's component level communication using input and output properties.
+
+<hr>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
 
