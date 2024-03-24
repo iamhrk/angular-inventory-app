@@ -9,5 +9,5 @@ import { Product } from '../models/product.model';
 export class ProductRowComponent {
 
   @Input() product: Product;
-  // @HostBinding('att.class') cssClass = 'item';
+  @HostBinding('attr.class') cssClass = 'item';
 }

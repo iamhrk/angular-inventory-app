@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 import { Product } from '../models/product.model';
 
 @Component({
@@ -11,4 +11,5 @@ import { Product } from '../models/product.model';
 export class ProductImageComponent {
 
   @Input() product: Product;
+  @HostBinding("attr.class") cssClass = "ui small image";
 }
